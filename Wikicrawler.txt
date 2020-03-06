@@ -1,0 +1,1166 @@
+                                                                                                                                                                                                                                                                                                                                                                                                ##         .                                                                                                      ## ## ##        ==                                                                                                   ## ## ## ## ##    ===                                                                                               /"""""""""""""""""\___/ ===                                                                                        ~~~ {~~ ~~~~ ~~~ ~~~~ ~~~ ~ /  ===- ~~~                                                                                      \______ o           __/                                                                                                   \    \         __/                                                                                                       \____\_______/                                                                                                                                                                                                                    docker is configured to use the default machine with IP 192.168.99.100                                                  For help getting started, check out the docs at https://docs.docker.com                                                                                                                                                                                                                                                                                                 Start interactive shell                                                                                                                                                                                                                         Nurul Husna@LAPTOP-L2FHB7QB MINGW64 /c/Program Files/Docker Toolbox                                                     $ cd~/                                                                                                                  bash: cd~/: No such file or directory                                                                                                                                                                                                           Nurul Husna@LAPTOP-L2FHB7QB MINGW64 /c/Program Files/Docker Toolbox                                                     $ cd ~/                                                                                                                                                                                                                                         Nurul Husna@LAPTOP-L2FHB7QB MINGW64 ~                                                                                   $ git clone  https://github.com/compeng-utp/test                                                                        Cloning into 'test'...                                                                                                  remote: Enumerating objects: 51, done.                                                                                  remote: Counting objects: 100% (51/51), done.                                                                           remote: Compressing objects: 100% (49/49), done.                                                                        remote: Total 51 (delta 19), reused 0 (delta 0), pack-reused 0                                                          Unpacking objects: 100% (51/51), done.                                                                                  Checking connectivity... done.                                                                                                                                                                                                                  Nurul Husna@LAPTOP-L2FHB7QB MINGW64 ~                                                                                   $ ls                                                                                                                    '3D Objects'/           ntuser.dat.LOG2                                                                                 AppData/                NTUSER.DAT{48e5b65c-e841-11e9-aa30-54ab3a84bdf0}.TxR.0.regtrans-ms                              'Application Data'@     NTUSER.DAT{48e5b65c-e841-11e9-aa30-54ab3a84bdf0}.TxR.1.regtrans-ms                              bluej/                  NTUSER.DAT{48e5b65c-e841-11e9-aa30-54ab3a84bdf0}.TxR.2.regtrans-ms                              code/                   NTUSER.DAT{48e5b65c-e841-11e9-aa30-54ab3a84bdf0}.TxR.blf                                        Contacts/               NTUSER.DAT{48e5b65d-e841-11e9-aa30-54ab3a84bdf0}.TM.blf                                         Cookies@                NTUSER.DAT{48e5b65d-e841-11e9-aa30-54ab3a84bdf0}.TMContainer00000000000000000001.regtrans-ms    Desktop/                NTUSER.DAT{48e5b65d-e841-11e9-aa30-54ab3a84bdf0}.TMContainer00000000000000000002.regtrans-ms    Documents/              ntuser.ini                                                                                      Downloads/              OneDrive/                                                                                       Favorites/              PicStream/                                                                                      IntelGraphicsProfiles/  Pictures/                                                                                       'Lab 3 1.zip'           PrintHood@                                                                                      Links/                  Recent@                                                                                         'Local Settings'@       'Saved Games'/                                                                                  MicrosoftEdgeBackups/   Searches/                                                                                       Music/                  SendTo@                                                                                         'My Documents'@         'Start Menu'@                                                                                   NetHood@                Templates@                                                                                      NTUSER.DAT              test/                                                                                           ntuser.dat.LOG1         Videos/                                                                                                                                                                                                                 Nurul Husna@LAPTOP-L2FHB7QB MINGW64 ~                                                                                   $ cd test                                                                                                                                                                                                                                       Nurul Husna@LAPTOP-L2FHB7QB MINGW64 ~/test (master)                                                                     $ ls                                                                                                                    instagram.py  packetsniffer.py  README.md  wikicrawler.py                                                                                                                                                                                       Nurul Husna@LAPTOP-L2FHB7QB MINGW64 ~/test (master)                                                                     $ touch Dockerfile                                                                                                                                                                                                                              Nurul Husna@LAPTOP-L2FHB7QB MINGW64 ~/test (master)                                                                     $ vim Dockerfile                                                                                                                                                                                                                                Nurul Husna@LAPTOP-L2FHB7QB MINGW64 ~/test (master)                                                                     $ ls                                                                                                                    Dockerfile  instagram.py  packetsniffer.py  README.md  wikicrawler.py                                                                                                                                                                           Nurul Husna@LAPTOP-L2FHB7QB MINGW64 ~/test (master)                                                                     $ touch Dockerfile                                                                                                                                                                                                                              Nurul Husna@LAPTOP-L2FHB7QB MINGW64 ~/test (master)                                                                     $ vim Dockerfile                                                                                                                                                                                                                                Nurul Husna@LAPTOP-L2FHB7QB MINGW64 ~/test (master)                                                                     $ touch wikicrawler.py                                                                                                                                                                                                                          Nurul Husna@LAPTOP-L2FHB7QB MINGW64 ~/test (master)                                                                     $ vim wikicrawler.ppy                                                                                                                                                                                                                           Nurul Husna@LAPTOP-L2FHB7QB MINGW64 ~/test (master)                                                                     $ vim wikicrawler.py                                                                                                                                                                                                                            Nurul Husna@LAPTOP-L2FHB7QB MINGW64 ~/test (master)                                                                     $ touch wikicrawler.py                                                                                                                                                                                                                          Nurul Husna@LAPTOP-L2FHB7QB MINGW64 ~/test (master)                                                                     $ vim wikicrawler.py                                                                                                                                                                                                                            Nurul Husna@LAPTOP-L2FHB7QB MINGW64 ~/test (master)                                                                     $ docker image build -t wikicrawler:test                                                                                "docker image build" requires exactly 1 argument.                                                                       See 'docker image build --help'.                                                                                                                                                                                                                Usage:  docker image build [OPTIONS] PATH | URL | -                                                                                                                                                                                             Build an image from a Dockerfile                                                                                                                                                                                                                Nurul Husna@LAPTOP-L2FHB7QB MINGW64 ~/test (master)                                                                     $ docker image build -t wikicrawler:hello                                                                               "docker image build" requires exactly 1 argument.                                                                       See 'docker image build --help'.                                                                                                                                                                                                                Usage:  docker image build [OPTIONS] PATH | URL | -                                                                                                                                                                                             Build an image from a Dockerfile                                                                                                                                                                                                                Nurul Husna@LAPTOP-L2FHB7QB MINGW64 ~/test (master)                                                                     $ docker image build -t wikicrawler:hello .                                                                             Sending build context to Docker daemon  132.6kB                                                                         Step 1/9 : FROM       python:3                                                                                           ---> f88b2f81f83a                                                                                                      Step 2/9 : LABEL      maintainer="husna_24908"                                                                           ---> Running in fe583a42fe02                                                                                           Removing intermediate container fe583a42fe02                                                                             ---> e67fc24c68c4                                                                                                      Step 3/9 : RUN        pip install beautifulsoup4                                                                         ---> Running in 2b15ced93a6b                                                                                           Collecting beautifulsoup4                                                                                                 Downloading beautifulsoup4-4.8.2-py3-none-any.whl (106 kB)                                                            Collecting soupsieve>=1.2                                                                                                 Downloading soupsieve-2.0-py2.py3-none-any.whl (32 kB)                                                                Installing collected packages: soupsieve, beautifulsoup4                                                                Successfully installed beautifulsoup4-4.8.2 soupsieve-2.0                                                               Removing intermediate container 2b15ced93a6b                                                                             ---> f3e7c46652f8                                                                                                      Step 4/9 : RUN        pip install requests                                                                               ---> Running in 44a90ed78e3b                                                                                           Collecting requests                                                                                                       Downloading requests-2.23.0-py2.py3-none-any.whl (58 kB)                                                              Collecting idna<3,>=2.5                                                                                                   Downloading idna-2.9-py2.py3-none-any.whl (58 kB)                                                                     Collecting certifi>=2017.4.17                                                                                             Downloading certifi-2019.11.28-py2.py3-none-any.whl (156 kB)                                                          Collecting chardet<4,>=3.0.2                                                                                              Downloading chardet-3.0.4-py2.py3-none-any.whl (133 kB)                                                               Collecting urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1                                                                        Downloading urllib3-1.25.8-py2.py3-none-any.whl (125 kB)                                                              Installing collected packages: idna, certifi, chardet, urllib3, requests                                                Successfully installed certifi-2019.11.28 chardet-3.0.4 idna-2.9 requests-2.23.0 urllib3-1.25.8                         Removing intermediate container 44a90ed78e3b                                                                             ---> ad9c50db1531                                                                                                      Step 5/9 : RUN        pip install wikipedia                                                                              ---> Running in f7b7a4a5fa30                                                                                           Collecting wikipedia                                                                                                      Downloading wikipedia-1.4.0.tar.gz (27 kB)                                                                            Requirement already satisfied: beautifulsoup4 in /usr/local/lib/python3.8/site-packages (from wikipedia) (4.8.2)        Requirement already satisfied: requests<3.0.0,>=2.0.0 in /usr/local/lib/python3.8/site-packages (from wikipedia) (2.23.0)                                                                                                                       Requirement already satisfied: soupsieve>=1.2 in /usr/local/lib/python3.8/site-packages (from beautifulsoup4->wikipedia) (2.0)                                                                                                                  Requirement already satisfied: chardet<4,>=3.0.2 in /usr/local/lib/python3.8/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (3.0.4)                                                                                                     Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.8/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (2019.11.28)                                                                                               Requirement already satisfied: idna<3,>=2.5 in /usr/local/lib/python3.8/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (2.9)                                                                                                            Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in /usr/local/lib/python3.8/site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (1.25.8)                                                                              Building wheels for collected packages: wikipedia                                                                         Building wheel for wikipedia (setup.py): started                                                                        Building wheel for wikipedia (setup.py): finished with status 'done'                                                    Created wheel for wikipedia: filename=wikipedia-1.4.0-py3-none-any.whl size=11685 sha256=f809d2b766dec40ec51e8a0b97e8f8a3df5303806fc07cd513060aec833c9bc5                                                                                       Stored in directory: /root/.cache/pip/wheels/07/93/05/72c05349177dca2e0ba31a33ba4f7907606f7ddef303517c6a              Successfully built wikipedia                                                                                            Installing collected packages: wikipedia                                                                                Successfully installed wikipedia-1.4.0                                                                                  Removing intermediate container f7b7a4a5fa30                                                                             ---> 242e4dc22c48                                                                                                      Step 6/9 : WORKDIR    /app                                                                                               ---> Running in eea2abf7becd                                                                                           Removing intermediate container eea2abf7becd                                                                             ---> 70de43f0df45                                                                                                      Step 7/9 : COPY       wikicrawler.py /app/                                                                               ---> 2a5f827a6389                                                                                                      Step 8/9 : RUN        chmod a+x wikicrawler.py                                                                           ---> Running in 26497cb91546                                                                                           Removing intermediate container 26497cb91546                                                                             ---> d0e08db74d86                                                                                                      Step 9/9 : ENTRYPOINT ["./wikicrawler.py"]                                                                               ---> Running in 74e1067619ff                                                                                           Removing intermediate container 74e1067619ff                                                                             ---> d9fe48f5011f                                                                                                      Successfully built d9fe48f5011f                                                                                         Successfully tagged wikicrawler:hello                                                                                   SECURITY WARNING: You are building a Docker image from Windows against a non-Windows Docker host. All files and directories added to build context will have '-rwxr-xr-x' permissions. It is recommended to double check and reset permissions for sensitive files and directories.                                                                                                                                                                                                             Nurul Husna@LAPTOP-L2FHB7QB MINGW64 ~/test (master)                                                                     $ docker image ls                                                                                                       REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE                                    wikicrawler         hello               d9fe48f5011f        13 seconds ago      944MB                                   linkextractor-web   step5-php           16f83d4c3183        8 days ago          414MB                                   wikicrawler-web     step5-php           16f83d4c3183        8 days ago          414MB                                   linkextractor-api   step5-python        3e385b95fa6c        8 days ago          949MB                                   wikicrawler-api     step5-python        3e385b95fa6c        8 days ago          949MB                                   <none>              <none>              99ed8badd6ca        8 days ago          944MB                                   wikicrawler         jalan               b9f16258a3ba        8 days ago          944MB                                   wikicrawler         kaki                b9f16258a3ba        8 days ago          944MB                                   wikicrawler         leg                 b9f16258a3ba        8 days ago          944MB                                   wikicrawler         walk                b9f16258a3ba        8 days ago          944MB                                   <none>              <none>              bdbf1b323123        8 days ago          944MB                                   <none>              <none>              5dc6dcb0d74e        8 days ago          944MB                                   <none>              <none>              3691c48d4225        8 days ago          944MB                                   redis               latest              7eed8df88d3b        8 days ago          98.2MB                                  python              3                   f88b2f81f83a        9 days ago          933MB                                   php                 7-apache            d753d5b380a1        9 days ago          414MB                                                                                                                                                           Nurul Husna@LAPTOP-L2FHB7QB MINGW64 ~/test (master)                                                                     $ docker container run -it --rm wikicrawler:test1.0 fish                                                                Unable to find image 'wikicrawler:test1.0' locally                                                                      C:\Program Files\Docker Toolbox\docker.exe: Error response from daemon: pull access denied for wikicrawler, repository does not exist or may require 'docker login': denied: requested access to the resource is denied.                        See 'C:\Program Files\Docker Toolbox\docker.exe run --help'.                                                                                                                                                                                    Nurul Husna@LAPTOP-L2FHB7QB MINGW64 ~/test (master)                                                                     $                                                                                                                                                                                                                                               Nurul Husna@LAPTOP-L2FHB7QB MINGW64 ~/test (master)                                                                     $ docker container run -it --rm wikicrawler:hello cake                                                                  standard_init_linux.go:211: exec user process caused "exec format error"                                                                                                                                                                        Nurul Husna@LAPTOP-L2FHB7QB MINGW64 ~/test (master)                                                                     $ docker container run -it --rm wikicrawler:hello Malaysia                                                              standard_init_linux.go:211: exec user process caused "exec format error"                                                                                                                                                                        Nurul Husna@LAPTOP-L2FHB7QB MINGW64 ~/test (master)                                                                     $ ls                                                                                                                    Dockerfile  instagram.py  packetsniffer.py  README.md  wikicrawler.ppy  wikicrawler.py                                                                                                                                                          Nurul Husna@LAPTOP-L2FHB7QB MINGW64 ~/test (master)                                                                     $ cat Dockerfile                                                                                                        FROM       python:3                                                                                                     LABEL      maintainer="husna_24908"                                                                                                                                                                                                             RUN        pip install beautifulsoup4                                                                                   RUN        pip install requests                                                                                         RUN        pip install wikipedia                                                                                                                                                                                                                WORKDIR    /app                                                                                                         COPY       wikicrawler.py /app/                                                                                         RUN        chmod a+x wikicrawler.py                                                                                                                                                                                                             ENTRYPOINT ["./wikicrawler.py"]                                                                                                                                                                                                                 Nurul Husna@LAPTOP-L2FHB7QB MINGW64 ~/test (master)                                                                     $ cat wikicrawler.py                                                                                                    import wikipedia                                                                                                        import sys                                                                                                                                                                                                                                                                                                                                                              page = wikipedia.page(sys.argv[-1])                                                                                     links = []                                                                                                                                                                                                                                      for link in page.links:                                                                                                         links.append({"page":link})                                                                                                                                                                                                             for link in links:                                                                                                              print (link["page"])                                                                                                                                                                                                                    Nurul Husna@LAPTOP-L2FHB7QB MINGW64 ~/test (master)                                                                     $                                                                                                                                                                                                                                               Nurul Husna@LAPTOP-L2FHB7QB MINGW64 ~/test (master)                                                                     $ touch Dockerfile                                                                                                                                                                                                                              Nurul Husna@LAPTOP-L2FHB7QB MINGW64 ~/test (master)                                                                     $ vim Dockerfile                                                                                                                                                                                                                                Nurul Husna@LAPTOP-L2FHB7QB MINGW64 ~/test (master)                                                                     $ touch wikicrawler.py                                                                                                                                                                                                                          Nurul Husna@LAPTOP-L2FHB7QB MINGW64 ~/test (master)                                                                     $ vim wikicrawler.py                                                                                                    
+Nurul Husna@LAPTOP-L2FHB7QB MINGW64 ~/test (master)
+$ cat wikicrawler.py
+#!/usr/bin/env python
+import wikipedia
+import sys
+
+
+page = wikipedia.page(sys.argv[-1])
+links = []
+
+for link in page.links:
+        links.append({"page":link})
+
+for link in links:
+        print (link["page"])
+
+Nurul Husna@LAPTOP-L2FHB7QB MINGW64 ~/test (master)
+$ docker container run -it --rm wikicrawler:hello Malaysia
+standard_init_linux.go:211: exec user process caused "exec format error"
+
+Nurul Husna@LAPTOP-L2FHB7QB MINGW64 ~/test (master)
+$
+
+Nurul Husna@LAPTOP-L2FHB7QB MINGW64 ~/test (master)
+$ docker image build -t wikicrawler:hello
+"docker image build" requires exactly 1 argument.
+See 'docker image build --help'.
+
+Usage:  docker image build [OPTIONS] PATH | URL | -
+
+Build an image from a Dockerfile
+
+Nurul Husna@LAPTOP-L2FHB7QB MINGW64 ~/test (master)
+$ docker image build -t wikicrawler:hello .
+Sending build context to Docker daemon  132.6kB
+Step 1/9 : FROM       python:3
+ ---> f88b2f81f83a
+Step 2/9 : LABEL      maintainer="husna_24908"
+ ---> Using cache
+ ---> e67fc24c68c4
+Step 3/9 : RUN        pip install beautifulsoup4
+ ---> Using cache
+ ---> f3e7c46652f8
+Step 4/9 : RUN        pip install requests
+ ---> Using cache
+ ---> ad9c50db1531
+Step 5/9 : RUN        pip install wikipedia
+ ---> Using cache
+ ---> 242e4dc22c48
+Step 6/9 : WORKDIR    /app
+ ---> Using cache
+ ---> 70de43f0df45
+Step 7/9 : COPY       wikicrawler.py /app/
+ ---> 412c4a0204ae
+Step 8/9 : RUN        chmod a+x wikicrawler.py
+ ---> Running in 531c94f1b0cc
+Removing intermediate container 531c94f1b0cc
+ ---> 6f1b5c4cabc2
+Step 9/9 : ENTRYPOINT ["./wikicrawler.py"]
+ ---> Running in 5273f5831eb8
+Removing intermediate container 5273f5831eb8
+ ---> b22b076eff60
+Successfully built b22b076eff60
+Successfully tagged wikicrawler:hello
+SECURITY WARNING: You are building a Docker image from Windows against a non-Windows Docker host. All files and directories added to build context will have '-rwxr-xr-x' permissions. It is recommended to double check and reset permissions for sensitive files and directories.
+
+Nurul Husna@LAPTOP-L2FHB7QB MINGW64 ~/test (master)
+$ docker image ls
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+wikicrawler         hello               b22b076eff60        13 seconds ago      944MB
+<none>              <none>              d9fe48f5011f        10 minutes ago      944MB
+linkextractor-web   step5-php           16f83d4c3183        8 days ago          414MB
+wikicrawler-web     step5-php           16f83d4c3183        8 days ago          414MB
+linkextractor-api   step5-python        3e385b95fa6c        8 days ago          949MB
+wikicrawler-api     step5-python        3e385b95fa6c        8 days ago          949MB
+<none>              <none>              99ed8badd6ca        8 days ago          944MB
+wikicrawler         jalan               b9f16258a3ba        8 days ago          944MB
+wikicrawler         kaki                b9f16258a3ba        8 days ago          944MB
+wikicrawler         leg                 b9f16258a3ba        8 days ago          944MB
+wikicrawler         walk                b9f16258a3ba        8 days ago          944MB
+<none>              <none>              bdbf1b323123        8 days ago          944MB
+<none>              <none>              5dc6dcb0d74e        8 days ago          944MB
+<none>              <none>              3691c48d4225        8 days ago          944MB
+redis               latest              7eed8df88d3b        8 days ago          98.2MB
+python              3                   f88b2f81f83a        9 days ago          933MB
+php                 7-apache            d753d5b380a1        9 days ago          414MB
+
+Nurul Husna@LAPTOP-L2FHB7QB MINGW64 ~/test (master)
+$ docker container run -it --rm wikicrawler:hello Malaysia
++60
+.my
+10th G-15 summit
+11th G-15 summit
+12th G-15 summit
+13 May Incident
+13 May incident
+13th G-15 summit
+14th G-15 summit
+15th G-15 summit
+16th Summit of the Non-Aligned Movement
+1956 Summer Olympics
+1972 Munich Olympic Games
+1988 Malaysian constitutional crisis
+1997 Asian Financial Crisis
+1997 Asian financial crisis
+1st G-15 summit
+2018 Malaysian general election
+2020 Malaysian political crisis
+2nd G-15 summit
+3rd G-15 summit
+45th Pacific Islands Forum
+4th G-15 summit
+5th G-15 summit
+6th G-15 summit
+7th G-15 summit
+8th G-15 summit
+9th G-15 summit
+APEC Australia 1989
+APEC Australia 2007
+APEC Brunei 2000
+APEC Business Travel Card
+APEC Canada 1997
+APEC Chile 2004
+APEC Chile 2019
+APEC China 2001
+APEC China 2014
+APEC Climate Center
+APEC Indonesia 1994
+APEC Indonesia 2013
+APEC Japan 1995
+APEC Japan 2010
+APEC Malaysia 1998
+APEC Malaysia 2020
+APEC Mexico 2002
+APEC New Zealand 1999
+APEC Papua New Guinea 2018
+APEC Peru 2008
+APEC Peru 2016
+APEC Philippines 1996
+APEC Philippines 2015
+APEC Republic of Korea 1991
+APEC Russia 2012
+APEC Sculpture Garden
+APEC Singapore 1990
+APEC Singapore 2009
+APEC South Korea 2005
+APEC Thailand 1992
+APEC Thailand 2003
+APEC United States 1993
+APEC United States 2011
+APEC Vietnam 2006
+APEC Vietnam 2017
+APEC Youth Science Festival
+APEC blue
+ASEAN
+ASEAN Armies Rifle Meet
+ASEAN Charter
+ASEAN Common Time
+ASEAN Declaration
+ASEAN Football Championship
+ASEAN Football Federation
+ASEAN Free Trade Area
+ASEAN Hymn
+ASEAN ParaGames
+ASEAN Regional Forum
+ASEAN School Games
+ASEAN Summit
+ASEAN University Games
+ASEAN–China Free Trade Area
+ASEAN–India Free Trade Area
+Abdullah of Pahang
+Abkhazia
+Absolute monarchy
+Administrative divisions of Malaysia
+Affirmative action
+Afghanistan
+African, Caribbean and Pacific Group of States
+African Union
+Age group
+Agriculture in Malaysia
+Agung
+AirAsia
+Akrotiri and Dhekelia
+Albania
+Algeria
+Alor Setar
+Ambiga Sreenevasan
+American Samoa
+Ampang Jaya
+Anglo-Dutch Treaty of 1824
+Anguilla
+Anthony Reid (academic)
+Antigua and Barbuda
+Apostasy
+Arab League
+Arabic culture
+Argentina
+Armenia
+Ascomycota
+Ashmore and Cartier Islands
+Asia
+Asia-Pacific
+Asia-Pacific Economic Cooperation
+Asian Development Bank
+Asian Monetary Unit
+Asia–Europe Meeting
+Aslian languages
+Asphalt
+Asphalt concrete
+Association football
+Association of Southeast Asian Nations
+Astro Awani
+Australia
+Australian Antarctic Territory
+Austronesian people
+Azerbaijan
+BBC News
+Badminton
+Bahrain
+Bamboo network
+Bandung Conference
+Banggi Island
+Bangladesh
+Bank Negara Malaysia
+Barbados
+Basidiomycota
+Batik
+Batu Caves
+Beetle nut
+Belize
+Benin
+Berjaya Air
+Bermuda
+Bhutan
+Bibliography of Malaysia
+Bidayuh
+Biodiversity action plan
+Borders of Malaysia
+Bornean languages
+Borneo
+Borneo lowland rain forests
+Bosnia and Herzegovina
+Botswana
+Bowls
+Bracket fungi
+Brazil
+British Antarctic Territory
+British Borneo
+British Empire
+British English
+British Indian Ocean Territory
+British Malaya
+British Virgin Islands
+British culture
+Brunei
+Buddhism
+Buddhism in Malaysia
+Buddhist temple
+Bumiputera (Malaysia)
+Burkina Faso
+Burma Railway
+Bursa Malaysia
+Burung Petala Procession
+Business Insider
+Cabinet of Malaysia
+Cambodia
+Cameroon
+Canada
+Caning in Malaysia
+Cantonese
+Capital punishment in Malaysia
+Caucasian race
+Cayman Islands
+Celebes Sea
+Central African Republic
+Central Intelligence Agency
+Chad
+Chan Peng Soon
+Chavacano language
+Chiang Mai Initiative
+Chief Ministers in Malaysia
+Chile
+China
+Chinese New Year
+Chinese Taipei
+Chinese culture
+Chinese folk religion
+Christianity in Malaysia
+Christmas Island
+Cinema of Malaysia
+Climate change
+Co-Princes of Andorra
+Coastal Kadazan language
+Coat of arms of Malaysia
+Cocos (Keeling) Islands
+Colony of Singapore
+Common law
+Commonwealth Games
+Commonwealth of Nations
+Communist insurgency in Malaysia (1968–89)
+Communist insurgency in Sarawak
+Commuter rail
+Comoros
+Comprehensive Economic Partnership for East Asia
+Concrete
+Conference of Rulers
+Confucianism
+Constitution of Malaysia
+Constitutional convention (political custom)
+Constitutional monarchy
+Convention on Biological Diversity
+Cook Islands
+Coordinated Universal Time
+Coral Sea Islands
+Coral Triangle
+Country code top-level domain
+Court of Appeal of Malaysia
+Courts of Malaysia
+Credit Suisse
+Creole language
+Crime in Malaysia
+Crocker Range
+Cross border attacks in Sabah
+Crown Colony of Labuan
+Crown Colony of North Borneo
+Crown Colony of Sarawak
+Crude birth rate
+Crude death rate
+Cuba
+Cultural assimilation
+Culture of Malaysia
+Curlie
+Cyprus
+Daily Express (Malaysia)
+Dayak people
+Deepavali
+Deforestation in Malaysia
+Democratic Action Party (Malaysia)
+Demographics of Malaysia
+Demonym
+Dependent territory
+Developing 8 Countries
+Dewan Negara
+Dewan Rakyat
+Diarchy
+Digital object identifier
+Dipterocarpaceae
+Districts of Malaysia
+Divisions of Malaysia
+Divorce
+Djibouti
+Dominica
+Double track
+Drink
+Drug trafficking
+Dual carriageway
+Dusunic languages
+Dutch Malacca
+Dutch–Portuguese War
+Dynamite fishing
+East Asia Summit
+East India Company
+East Malaysia
+East Timor
+Economic Cooperation Organization
+Economic Transformation Programme
+Economy of Malaysia
+Ecotourism
+Education in Malaysia
+Egypt
+Eid al-Fitr
+Eid ul-Adha
+Eighth East Asia Summit
+Elections in Malaysia
+Elective monarchy
+Electric utility
+Electrical substation
+Electrified railways
+Eleventh East Asia Summit
+Emblem of the Association of Southeast Asian Nations
+Emir of Kuwait
+Emperor of Japan
+Encyclopædia Britannica
+Endemism
+Energy policy of Malaysia
+English law
+Enlargement of the Association of Southeast Asian Nations
+Environment of Malaysia
+Environmental issues in Malaysia
+Established religion
+Eswatini
+Ethnic Malays
+Ethnic group
+Ethnic groups in Malaysia
+Ethnoreligious group
+Eurasia
+European Union
+Exclusive economic zone of Malaysia
+Executive branch
+FIFA World Cup
+FIH World Rankings
+Falkland Islands
+Family law
+Federal Constitution of Malaysia
+Federal Court of Malaysia
+Federal Highway, Malaysia
+Federal Territories (Malaysia)
+Federal monarchy
+Federated Malay States
+Federation
+Federation of Malaya
+Fidel Castro
+Field hockey
+Fifth East Asia Summit
+Fiji
+Firefly (airline)
+First-past-the-post voting
+First East Asia Summit
+Five Power Defence Arrangements
+Five Principles of Peaceful Coexistence
+Flag carrier
+Flag of Malaysia
+Flag of the Association of Southeast Asian Nations
+Food and Agriculture Organization
+Foreign relations of Malaysia
+Formula One
+Fort Cornwallis
+Fourteenth East Asia Summit
+Fourth East Asia Summit
+France
+Francis Light
+Freedom of religion
+Freedom of the press
+French Polynesia
+Funicular
+Fuzhou dialect
+GWh
+Gabon
+Gamal Abdel Nasser
+Gawai Dayak
+Gaza flotilla raid
+Gendang
+Geographic coordinate system
+Geography of Malaysia
+George Samuel Windsor Earl
+George Town, Penang
+Georgia (country)
+Germany
+Ghana
+Gibraltar
+Gini coefficient
+Global Retirement Index
+Global Times
+Golok River
+Gong
+Governance of Malaysia
+Government Transformation Programme (Malaysia)
+Government of Malaysia
+Government of the United Kingdom
+Granite
+Grenada
+Gross domestic product
+Group of 15
+Guam
+Guernsey
+Guinea
+Guinea-Bissau
+Gulf of Thailand
+Gunung Mulu National Park
+Guyana
+HSBC
+Hainanese
+Hakka Chinese
+Hari Merdeka
+Hawksbill sea turtle
+Head of government
+Head of state
+Healthcare in Malaysia
+Heard Island and McDonald Islands
+Heavy rail
+Hereditary monarchy
+Hibiscus rosa-sinensis
+High Courts of Malaysia
+Hinduism
+Hinduism in Malaysia
+Historical Dictionary of Switzerland
+History of Malaysia
+Hockey World Cup
+Hokkien
+Hong Kong
+Horse riding
+Houari Boumediene
+House of Representatives of Malaysia
+House of Wangchuck
+Human Development Index
+Human rights in Malaysia
+ISO 3166
+ISO 3166-2:MY
+ISO 4217
+Iban language
+Iban people
+Identity document
+Immigration
+Income inequality in Malaysia
+Independence
+Index of Malaysia-related articles
+India
+India and the Non-Aligned Movement
+Indian Culture
+Indonesia
+Indonesia–Malaysia confrontation
+Industrial park
+Infant mortality rate
+Infrastructure of Malaysia
+Inheritance
+Integrated Authority File
+International Criminal Court
+International Futures
+International Monetary Fund
+International Organization for Migration
+International Space Station
+International Standard Book Number
+International Standard Name Identifier
+International Standard Serial Number
+Ipoh
+Iran
+Iraq
+Iskandar Puteri
+Islam
+Islam in Malaysia
+Islamic banking
+Isle of Man
+Israel
+Israeli–Palestinian peace process
+Italy
+Ivory Coast
+JSTOR
+Jamaica
+James Brooke
+Jane's Information Group
+Japan
+Japanese Army
+Japanese invasion of Malaya
+Japanese occupation of British Borneo
+Japanese occupation of Malaya
+Japanese occupation of Singapore
+Javanese language
+Jawaharlal Nehru
+Jawi alphabet
+Jersey
+Johann Friedrich Blumenbach
+Johor
+Johor Bahru
+Jordan
+Josip Broz Tito
+Journal of Southeast Asian Studies
+Judiciary of Malaysia
+Julau District
+Jules Dumont d'Urville
+Jurisprudence
+KTM Class 91
+KTM Class 92
+KVMRT
+Kaamatan
+Kadazan-Dusun
+Kajang
+Kalimantan
+Kangar
+Karst
+Kazakhstan
+Kedah
+Kek Lok Si
+Kelantan
+Kenya
+Keretapi Tanah Melayu
+Ketuanan Melayu
+Kidnapping
+Kilovolts
+Kinabalu National Park
+Kinabatangan District
+King of Bahrain
+King of Saudi Arabia
+Kingdom of Singapura
+Kiribati
+Klang (city)
+Kompas
+Kota Bharu
+Kota Kinabalu
+Kota Kinabalu International Airport
+Kris
+Kuala Lumpur
+Kuala Lumpur International Airport
+Kuala Penyu District
+Kuala Terengganu
+Kuantan
+Kuching
+Kulim Hi-Tech Park
+Kulintang
+Kuwait
+Kwame Nkrumah
+Kyrgyzstan
+LGBT rights in Malaysia
+LIBRIS
+Labour Day
+Labuan
+Land Dayak languages
+Langkasuka
+Languages of Malaysia
+Laos
+Law enforcement in Malaysia
+Law of Malaysia
+Leatherback turtle
+Lebanon
+Lee Chong Wei
+Left- and right-hand traffic
+Lesotho
+Library of Congress Control Number
+Libya
+Light rapid transit
+List of ASEAN countries by GDP (nominal)
+List of Amirs of Qatar
+List of Malaysia-related topics
+List of Malaysian states by GDP
+List of Niuean monarchs
+List of Secretaries-General of the Association of Southeast Asian Nations
+List of Sultans of Brunei
+List of World Heritage Sites in Malaysia
+List of airports in Malaysia
+List of banks in Malaysia
+List of cities and towns in Malaysia by population
+List of countries and dependencies by area
+List of countries and dependencies by population
+List of countries and dependencies by population density
+List of countries and outlying territories by total area
+List of countries and territories by population density
+List of countries by GDP (PPP)
+List of countries by GDP (PPP) per capita
+List of countries by GDP (nominal)
+List of countries by GDP (nominal) per capita
+List of countries by Human Development Index
+List of countries by population
+List of countries by population in 2010
+List of current constituent monarchs
+List of current sovereign monarchs
+List of districts in Malaysia
+List of islands of Malaysia
+List of kings of Jordan
+List of lakes of Malaysia
+List of monarchs of Cambodia
+List of monarchs of Eswatini
+List of monarchs of Lesotho
+List of monarchs of Tonga
+List of mountains in Malaysia
+List of national parks in Malaysia
+List of national parks of Malaysia
+List of political parties in Malaysia
+List of power stations in Malaysia
+List of rivers of Malaysia
+List of rulers of Morocco
+List of rulers of Oman
+List of sovereign states
+List of sovereign states and dependent territories in Asia
+List of sovereigns of Vatican City State
+List of states with limited recognition
+List of the world's busiest airports by international passenger traffic
+List of the world's busiest airports by passenger traffic
+Logging
+Lower house
+M4 carbine
+MASkargo
+MASwings
+MSC Malaysia
+Macau
+Madh'hab
+Mahathir Mohamad
+Majapahit
+Malacca
+Malacca City
+Malacca Sultanate
+Malawi
+Malay Archipelago
+Malay Peninsula
+Malay alphabet
+Malay folklore
+Malay language
+Malay people
+Malay race
+Malay states
+Malayan Communist Party
+Malayan Emergency
+Malayan Union
+Malayan tiger
+Malayic languages
+Malays (ethnic group)
+Malaysia
+Malaysia Agreement
+Malaysia Airlines
+Malaysia Airlines Flight 17
+Malaysia Airlines Flight 370
+Malaysia Day
+Malaysia Defence Industry Council
+Malaysia My Second Home
+Malaysia and the World Bank
+Malaysia at the Olympics
+Malaysia men's national field hockey team
+Malaysian Armed Forces
+Malaysian Army
+Malaysian Chinese
+Malaysian English
+Malaysian Federal Roads System
+Malaysian Grand Prix
+Malaysian Indian
+Malaysian Indians
+Malaysian Malay
+Malaysian Matriculation Programme
+Malaysian National Space Agency
+Malaysian New Economic Policy
+Malaysian Standard Time
+Malaysian batik
+Malaysian citizenship
+Malaysian cuisine
+Malaysian diaspora
+Malaysian federal budget
+Malaysian language
+Malaysian literature
+Malaysian names
+Malaysian ringgit
+Malaysians
+Maldives
+Malesia
+Mali
+Malindo Air
+Malta
+Mandarin Chinese
+Manglish
+Mangroves
+Maritime Southeast Asia
+Maritime boundary
+Market economy
+Marriage
+Marshall Islands
+Martial arts
+Mauritania
+Mauritius
+Mawlid
+Media of Malaysia
+Medical tourism in Malaysia
+Megadiverse countries
+Megawatts
+Melaka
+Melaka City
+Melanau people
+Melanesia
+Melayu Kingdom
+Member states of the Association of Southeast Asian Nations
+Member states of the Commonwealth of Nations
+Members of the Dewan Rakyat, 13th Malaysian Parliament
+Merdeka Day
+Merdeka Stadium
+Mexico
+Micronesia
+Mike Pompeo
+Military of Malaysia
+Mindanao
+Ministry of Foreign Affairs (Malaysia)
+Ministry of National Defense of the People's Republic of China
+Misbun Sidek
+Mohamed Morsi
+Monarchies in Africa
+Monarchies in Asia
+Monarchies in Europe
+Monarchies in Oceania
+Monarchies in the Americas
+Monarchies of Malaysia
+Monarchy
+Monarchy in the Cook Islands
+Monarchy of Antigua and Barbuda
+Monarchy of Australia
+Monarchy of Barbados
+Monarchy of Belgium
+Monarchy of Belize
+Monarchy of Canada
+Monarchy of Denmark
+Monarchy of Grenada
+Monarchy of Jamaica
+Monarchy of Liechtenstein
+Monarchy of Luxembourg
+Monarchy of Monaco
+Monarchy of New Zealand
+Monarchy of Norway
+Monarchy of Papua New Guinea
+Monarchy of Saint Kitts and Nevis
+Monarchy of Saint Lucia
+Monarchy of Saint Vincent and the Grenadines
+Monarchy of Solomon Islands
+Monarchy of Spain
+Monarchy of Sweden
+Monarchy of Thailand
+Monarchy of Tuvalu
+Monarchy of the Bahamas
+Monarchy of the Netherlands
+Monarchy of the United Kingdom
+Mongolia
+Monorail
+Monsoon
+Montserrat
+Moro National Liberation Front
+Moro conflict in the Philippines
+Morocco
+Mount Kinabalu
+Mount Korbu
+Mozambique
+Muhyiddin Yassin
+Mukim
+Murder
+MusicBrainz
+Music of Malaysia
+Muslim
+Muslim holidays
+Muslims
+MyKad
+Myanmar
+NAM News Network
+Najib Razak
+Namibia
+Nasi lemak
+National Archives and Records Administration
+National Development Policy
+National Diet Library
+National Grid (Malaysia)
+National Language Act 1963/67
+National Library of Israel
+National Library of the Czech Republic
+National dish
+National symbols of Malaysia
+Nauru
+Negaraku
+Negeri Sembilan
+Negritos
+Nelson Mandela
+Nepal
+New Caledonia
+New Sabah Times
+New Zealand
+Newly industrialised country
+Nicolás Maduro
+Niger
+Nigeria
+Ninth East Asia Summit
+Niue
+Non-Aligned Foreign Ministers Conference
+Non-Aligned Movement
+Nondenominational Muslims
+Norfolk Island
+North Borneo
+North Borneo Self-government Day
+North Borneo dispute
+North Korea
+Northern Cyprus
+Northern Mariana Islands
+North–South Expressway (Malaysia)
+Oceania
+Olympic Council of Malaysia
+Oman
+Open economy
+Orang Asal
+Orang Asli
+Orang Ulu
+Organisation of Islamic Cooperation
+Organisations associated with the Association of Southeast Asian Nations
+Oriental pied hornbill
+Outline of Malaysia
+Overconsumption
+Overseas Chinese
+PROTON Holdings
+PT-91M
+Pacific Islands Forum
+Pahang
+Pakatan Harapan
+Pakistan
+Palau
+Palm oil
+Palm oil production in Malaysia
+Pan-Borneo Highway
+Pan-Malaysian Islamic Party
+Papua New Guinea
+Parameswara (king)
+Parliament of Malaysia
+Parliamentary system
+Pattani
+Penang
+Penang Hill Railway
+Penang International Airport
+Penang Island
+Peninsular Malaysia
+Perak
+Perlis
+Perlis River
+Persian culture
+Peru
+Petaling Jaya
+Petronas
+Petronas Towers
+Pew Research Center
+Philippine languages
+Philippines
+Piracy
+Piracy in the Sulu Sea
+Pitcairn Islands
+Political alliance
+Politics of Malaysia
+Polynesia
+Port Klang
+Portuguese-based creole languages
+Portuguese Malacca
+Poverty in Malaysia
+Prehistoric Malaysia
+President of the United Arab Emirates
+Press Information Bureau
+Prime Minister of Malaysia
+Printing Presses and Publications Act
+Proboscis monkey
+Proclamation of Malaysia
+PubMed Central
+PubMed Identifier
+Public holidays
+Public holidays in Malaysia
+Purchasing power parity
+Putra Mosque
+Putrajaya
+Qatar
+RELA Corps
+Rafflesia
+Rail transport in Malaysia
+Raj of Sarawak
+Rapid Rail
+Rapid transit
+RazakSAT
+Regional Comprehensive Economic Partnership
+Religion in Malaysia
+Religious conversion
+Republic of Artsakh
+Republic of China
+Resident (title)
+Right- and left-hand traffic
+Ross Dependency
+Royal Malaysian Air Force
+Royal Malaysian Navy
+Royalties
+Rubber
+Rukun Negara
+Russia
+Rwanda
+SEA Games
+Sabah
+Sabah Electricity
+Sailing
+Saint Helena, Ascension and Tristan da Cunha
+Saint Kitts and Nevis
+Saint Lucia
+Saint Vincent and the Grenadines
+Sama-Bajau
+Sama–Bajaw languages
+Sambal
+Samoa
+Sanskrit
+Sarawak
+Sarawak Energy
+Sarawak Self-government Day
+Sarawak United Peoples' Party
+Saudi Arabia
+Science and technology in Malaysia
+Scorpène-class submarine
+Seberang Perai
+Secession
+Second East Asia Summit
+Second World War
+Second language
+Selangau District
+Selangor
+Selayang
+Senate of Malaysia
+Senegal
+Sepang International Circuit
+Seremban
+Seventh East Asia Summit
+Seychelles
+Shadow Cabinet of Malaysia
+Shafi'i
+Shah Alam
+Shariah law
+Sheikh Muszaphar Shukor
+Shrimp paste
+Sierra Leone
+Sijil Pelajaran Malaysia
+Silat Melayu
+Singapore
+Singapore in Malaysia
+Sipadan island
+Sixth East Asia Summit
+Skate boarding
+Skudai–Pontian Highway
+Smuggling
+Social contract (Malaysia)
+Société de Géographie
+Solomon Islands
+Somalia
+Songket
+South Africa
+South China Sea
+South Georgia and the South Sandwich Islands
+South Korea
+South Ossetia
+South Thailand insurgency
+Southeast Asia
+Sovereign state
+Spain
+Special administrative regions of China
+Spice route
+Sport in Malaysia
+Spratly Islands
+Squash (sport)
+Squash Racquets Association Of Malaysia
+Sri Lanka
+Srivijaya
+State Legislative Assembly
+State Railway of Thailand
+State legislative assemblies of Malaysia
+State of Palestine
+States and federal territories of Malaysia
+States of Malaysia
+Stir fried water spinach
+Strait of Malacca
+Straits Settlements
+Stuff.co.nz
+Subang Jaya
+Sudan
+Sukarno
+Sukhoi Su-30MKM
+Sultanate of Brunei
+Sultanate of Sulu
+Sulu Sea
+Sumatra
+Sungai Petani
+Sunni Islam
+Suriname
+Syariah Court
+Symbols of Malaysia
+Syria
+Taiwan
+Tajikistan
+Tamil language
+Tamil people
+Tanah Melayu
+Tanjung Piai
+Tanzania
+Taoism
+Tawau
+Technology Park Malaysia
+Teh tarik
+Telecommunication
+Telecommunications in Malaysia
+Telephone numbers in Malaysia
+Tenaga Nasional
+Tennis
+Tenth East Asia Summit
+Terengganu
+Terengganu Inscription Stone
+Territorial disputes in the South China Sea
+Terrorism
+Thai language
+Thailand
+Thaipusam
+The ASEAN Way
+The Bahamas
+The Brunei Times
+The Gambia
+The Huffington Post
+The Philippine Star
+The Sun (Malaysia)
+The World Factbook
+Third East Asia Summit
+Thirteenth East Asia Summit
+Thomas Cup
+Timeline of Malaysian history
+Tin
+Titiwangsa Mountains
+Toadstool
+Togo
+Tokelau
+Tonga
+Total fertility rate
+Tourism in Malaysia
+Trade unions in Malaysia
+Transmile Air Services
+Transport in Malaysia
+Treaty of Amity and Cooperation in Southeast Asia
+Treaty on the Prohibition of Nuclear Weapons
+Trinidad and Tobago
+Tropical climate
+Tropical rainforest climate
+Tropics
+Trunk road
+Tun Abdul Razak
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+Twelfth East Asia Summit
+Two-state solution
+Uganda
+Unfederated Malay States
+United Arab Emirates
+United Kingdom
+United Malays National Organisation
+United Nations
+United Nations Department of Economic and Social Affairs
+United Nations Integrated Mission in East Timor
+United Nations Interim Administration Mission in Kosovo
+United Nations Interim Force in Lebanon
+United Nations Iran–Iraq Military Observer Group
+United Nations Operation in Somalia II
+United Nations Operation in the Congo
+United Nations Protection Force
+United Nations Transition Assistance Group
+United Nations Transitional Authority in Cambodia
+United States
+Upper house
+Uzbekistan
+Vanuatu
+Varieties of Chinese
+Vascular plant
+Venezuela
+Vietnam
+Virtual International Authority File
+Visa (document)
+Visa policy of ASEAN members
+Voting age
+Wallis and Futuna
+Water supply and sanitation in Malaysia
+Wau bulan
+Wawasan 2020
+West Malaysia
+Western and Central Pacific Fisheries Commission
+Westminster system
+White Rajahs
+Wildlife of Malaysia
+Women in Malaysia
+WorldCat Identities
+World Bank
+World Heritage Site
+Writing system
+Xinhua News Agency
+Yale University
+Yang di-Pertua Negeri
+Yang di-Pertuan Agong
+Yemen
+Yugoslavia
+Yugoslavia and the Non-Aligned Movement
+Zambia
+Zimbabwe
+
+Nurul Husna@LAPTOP-L2FHB7QB MINGW64 ~/test (master)
+$  
